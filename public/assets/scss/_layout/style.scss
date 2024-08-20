@@ -1,0 +1,457 @@
+.container-fluid {
+    max-width: 1480px;
+}
+
+.landing-page {
+    padding: 5px 0;
+    .lnw-body-dashboard {
+        .breadcrumb {
+            background: #0b3c64;
+            border-radius: 0px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            .title-page {
+                color: #fff;
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 17px;
+                align-items: center;
+                display: flex;
+                @media screen and (max-width: 769px) {
+                    font-size: 16px;
+                }
+            }
+            .title-page-right {
+                color: #fff;
+                h5 {
+                    font-size: 16px;
+                }
+                h6 {
+                    font-size: 16px;
+                    margin: 0;
+                }
+            }
+        }
+        .company-form {
+            border: 1px solid #ccc;
+            padding: 5px;
+            form {
+                .left-side-box {
+                    .company-information {
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        border: 1px solid #ccc;
+                        @media screen and (max-width: 870px) {
+                            overflow-x: scroll;
+                        }
+                        .form-group {
+                            margin-bottom: 0.2rem;
+                            display: flex;
+                            h5 {
+                                font-size: 18px;
+                                position: relative;
+                                text-transform: capitalize;
+                                line-height: 0.5;
+                                font-weight: 700;
+                                @media screen and (max-width: 769px) {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                }
+                            }
+                            label {
+                                margin-bottom: 0;
+                                font-size: 14px;
+                                line-height: 1.5;
+                                font-weight: 500;
+                                text-transform: capitalize;
+                                width: 50%;
+                                padding: 0.3rem 0.75rem;
+                            }
+                            select.form-control:not([size]):not([multiple]) {
+                                height: unset;
+                            }
+                            .form-control {
+                                cursor: text;
+                                letter-spacing: 0em;
+                                outline: 0;
+                                transition: 0.5s ease-in;
+                                display: block;
+                                padding: 0.3rem 0.75rem;
+                                font-weight: 400;
+                                line-height: 1.5;
+                                color: #495057;
+                                background-color: #ffffff;
+                                background-clip: padding-box;
+                                border-radius: 0;
+                                font-size: 14px;
+                                border: none;
+                                border-bottom: none;
+                                border-bottom: 1px solid #dee2e6;
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+                           
+                            #fileToUpload {
+                                cursor: pointer;
+                                width: 100%;
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+                            .image-setion {
+                                width: 100%;
+                                .image-upload-wrap {
+                                    border: 2px dashed #0b3c64;
+                                    position: relative;
+                                    width: 100px;
+                                    height: 100px;
+                                    &:hover {
+                                        .drag-text h3 {
+                                            color: #fff;
+                                        }
+                                    }
+                                    .file-upload-input {
+                                        position: absolute;
+                                        margin: 0;
+                                        padding: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        outline: none;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                    }
+                                    .drag-text {
+                                        text-align: center;
+                                        h3 {
+                                            font-weight: 100;
+                                            text-transform: uppercase;
+                                            color: #0b3c64;
+                                            padding: 40px 0;
+                                            font-size: 14px;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                                .file-upload-content {
+                                    display: none;
+                                    text-align: center;
+                                    .upload-content {
+                                        display: flex;
+                                        .file-upload-image {
+                                            max-height: 100px;
+                                            max-width: 100px;
+                                            margin: auto;
+                                        }
+                                        .image-title-wrap {
+                                            padding: 0 15px 15px 15px;
+                                            color: #222;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            .remove-image {
+                                                width: 200px;
+                                                margin: 0;
+                                                color: #fff;
+                                                background: #0b3c64;
+                                                border: none;
+                                                padding: 10px;
+                                                border-radius: 4px;
+                                                transition: all 0.2s ease;
+                                                outline: none;
+                                                text-transform: uppercase;
+                                                font-weight: 700;
+                                                &:active {
+                                                    border: 0;
+                                                    transition: all .2s ease;
+                                                }
+                                                &:hover {
+                                                    background: #c13b2a;
+                                                    color: #ffffff;
+                                                    transition: all 0.2s ease;
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .image-dropping,
+                                .image-upload-wrap:hover {
+                                background-color: #0b3c64;
+                                border: 4px dashed #ffffff;
+                                }
+                            }
+                        }
+                        .company-adress-list {
+                            border: 1px solid #ccc;
+                            padding: 10px 10px 0px 10px;
+                            border-radius: 5px;
+                            margin-bottom: 0.5rem;
+                        }
+                        table {
+                            margin-bottom: 0;
+                            #idnumber {
+                                width: 15px;
+                                text-align: center;
+                            }
+                            #table-priceiwidth {
+                                width: 100px;
+                            }
+                            #priceiwidth {
+                                width: 80px;
+                            }
+                            #selectOption {
+                                width: 200px;
+                            }
+                            th {
+                                border: 1px solid #dee2e6;
+                                padding: 0.3rem 0.75rem;
+                            }
+                            td {
+                                padding: 0.3rem 0.75rem;
+                                vertical-align: top;
+                                border: 1px solid #dee2e6;
+                            }
+                            .form-control {
+                                border: none !important;
+                                padding: 0 !important;
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+                            tbody {                             
+                                tr {
+                                    background-color: #ffffff;
+                                    th.total-calculate {
+                                        text-align: right;
+                                    }
+                                    .form-group  {
+                                        margin-bottom: 0 !important;
+                                    }
+                                    .priceBolid {
+                                        font-weight: 700;
+                                        float: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .closing-balance {
+                        text-align: right;
+                        font-size: 16px;
+                        background: #0b3c64;
+                        margin: 0;
+                        display: flex;
+                        justify-content: end;
+                        color: #fff;
+                        padding: 0.75rem 1rem;
+                    }
+                    .condition-term {
+                        font-weight: 600;
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+                .form-group.ml-auto {
+                    margin: 0;
+                    display: flex;
+                    justify-content: end;
+                    button.btn.btn-submit {
+                        font-size: 0.8rem;
+                        line-height: 1.2rem;
+                        font-weight: 600;
+                        text-decoration: none;
+                        background: #ffffff;
+                        padding: 8px 15px;
+                        color: $landing-page-header-color;
+                        border: 1px solid $landing-page-header-color;
+                        border-radius: 5px;
+                        text-transform: uppercase;
+                        transition: 0.5s ease-in;
+                        &:hover {
+                            background: $landing-page-header-color !important;
+                            color: #FFF !important;
+                            border: 1px solid $landing-page-header-color;
+                        }
+                        @media screen and (max-width: 769px) {
+                            font-size: 0.8rem;
+                            padding: 15px 25px;
+
+                        }
+                    }
+                }
+                #purches-form {
+                    .form-group {
+                        label {
+                            width: 30%;
+                        }
+                        .total-amount-list {
+                            width: 100%;
+                            text-align: right;
+                            .total-quality{
+                                margin-right: 50px;
+                            }
+                        }
+                    }
+                    
+                }
+                .tableform-information {
+                    margin-left: 400px;
+                    @media screen and (max-width: 900px) {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+        #datepicker > span:hover{cursor: pointer;}
+
+    }
+}
+
+
+
+#login-page {
+    img {
+        width: 100vw;
+        height: 100vh;
+    }
+    .login-form {
+       
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        .login-box {
+            width: 510px;
+            background: #fff;
+            box-shadow: 0 3px 3px rgb(0 0 0 / 5%);
+            padding: 25px 35px;
+            border-radius: 5px;
+            margin-left: 30%;
+            @media only screen and (max-width: 736px) {
+                width: 70%;
+                margin-left: 18%;
+            }
+            @media only screen and (max-width: 505px) {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+        form {
+            .login-image {
+              text-align: center;
+              img {
+                  width: 180px;
+                  height: auto;
+                  margin-bottom: 20px;
+              }
+            }
+            .form-group {
+                margin-bottom: 1rem;
+                @media only screen and (max-width: 737px) {
+                    margin-bottom: 0.5rem;
+                }
+                .form-control {
+                    border: none;
+                    border-bottom: 2px solid #ced4da;
+                    border-radius: 0px;
+                    margin-bottom: 0.5rem;
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                p {
+                    margin-top: 1rem;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                }
+            }
+            .form-button {
+                text-align: center;
+                
+                .btn-back {
+                    margin-right: 15px;
+                    background: #989898;
+                    @media only screen and (max-width: 767px) {
+                        margin-right: 0px;
+                    }
+                    @media only screen and (max-width: 736px) {
+                        margin-bottom: 10px;
+                    }
+                    &:hover {
+                        background: $landing-page-header-color;
+                    }
+                }
+                .btn-login {
+                    background: $landing-page-header-color;
+                    &:hover {
+                        background: #989898;
+                    }
+                }
+                button.btn {
+                    padding: 8px 80px;
+                    border-radius: 0px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #fff;
+                    @media only screen and (max-width: 1159px) {
+                        padding: 8px 60px;
+                    }
+                    @media only screen and (max-width: 937px) {
+                        padding: 8px 40px;
+                    }
+                    @media only screen and (max-width: 736px) {
+                        padding: 8px 0px;
+                        width: 100%;
+                    }
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    .login-text-condition {
+        background: #00000087;
+        color: #fff;
+        padding: 15px;
+        margin-top: 10%;
+        font-size: 16px;
+        @media only screen and (max-width: 1280px) {
+            margin-top: 5%;
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 1280px) {
+            margin-top: 3%;
+            font-size: 13px;
+        }
+        @media only screen and (max-width: 987px) {
+            margin-top: 2%;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+        @media only screen and (max-width: 688px) {
+            margin-top: 0.5rem;
+        }
+
+        h6 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            @media only screen and (max-width: 1280px) {
+                font-size: 14px;
+            }
+        }
+        p {
+            color: #c6c6c6;
+            margin: 0;
+        }
+    }
+}
